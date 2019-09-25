@@ -1,0 +1,10 @@
+nav {
+	background-color: #212121;
+
+	@media screen and (min-width: 40em) {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+}
