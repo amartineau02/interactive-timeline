@@ -1,19 +1,25 @@
 $(document).foundation();
 
-$('.panel').not('#rehobothvillage').hide();
-$('.intro').hide();
+// when the page loads, hide every panel
+$('.panel').hide();
 
-
-$('.mainmenu').on('click','a',function(e){
+// handle clicks on the main navigation
+$('.mainmenu a').click(function(e){
+  // don't do the default action (jump to a linked section of the page)
   e.preventDefault();
+  // hide the intro
+  $('.intro').hide();
+  // save the destination of the selected link (the one that was just clicked)
   var curr = $(this).attr('href');
+  // hide every panel
   $('.panel').hide();
+  // show the selected panel
   $(curr).show();
+  console.log(curr);
 });
 
 
-
-$('.auxmenu').on('click','a',function(e){
-  e.preventDefault();
-  $('.intro').toggle();
+// handle click on the logo
+$('.logo').click(function(){
+  $('.intro').show();
 });
