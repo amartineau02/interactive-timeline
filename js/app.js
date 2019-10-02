@@ -5,6 +5,8 @@ $('.panel').hide();
 
 // handle clicks on the main navigation
 $('.mainmenu a').click(function(e){
+  // remove flickr only to add it again later
+  $('main h1,main h2').removeClass('flickr');
   // don't do the default action (jump to a linked section of the page)
   e.preventDefault();
   // hide the intro
@@ -15,6 +17,9 @@ $('.mainmenu a').click(function(e){
   $('.panel').hide();
   // show the selected panel
   $(curr).show();
+  // add class to overlay to flickr transition
+  $('main h1,main h2').addClass('flickr');
+
   console.log(curr);
 });
 

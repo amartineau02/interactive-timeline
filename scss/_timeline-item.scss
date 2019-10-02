@@ -1,5 +1,70 @@
 /* MAIN CONTENT */
 
 main {
-	background-image: url("../img/bg1.jpg");
+	background-image: url("../img/bg2.jpg");
+	background-position: center;
+	background-position: bottom;
+	padding-top: 1.5rem;
+
+	h1, h2 {
+		opacity: 0;
+	}
+
+	h1 {
+		animation-name: flicker;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
+		opacity: 0;
+	}
+
+	h2 {
+		animation-name: flicker;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
+		opacity: 0;
+	}
 }
+
+
+::selection {
+  background: red; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: red; /* Gecko Browsers */
+}
+
+.overlay {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 95px;
+	left: 0;
+	background-color: black;
+	z-index: 1;
+	opacity: 0;
+
+}
+
+.flickr {
+	animation-name: flicker;
+	animation-duration: 15s;
+	aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
+	opacity: 0;
+}
+
+@keyframes flicker {
+  0% { opacity: 0; }
+  // 15% { opacity: 1; }
+  // 16% { opacity: .1; }
+  // 17% { opacity: .7; }
+  // 19% { opacity: .3; }
+  // 35% { opacity: .5; }
+  // 50% { opacity: 0; }
+  // 70% { opacity: .7; }
+  100% { opacity: 1; }
+}
+

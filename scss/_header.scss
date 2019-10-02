@@ -1,23 +1,19 @@
 /* HEADER & FOOTER -- WHERE TIMELINE STUFF IS */
 
-header {
+header, footer {
 	background-color: #212121;
 	padding: 1rem;
+}
+
+.logo {
+	position: relative;
+	top: 5px;
 }
 
 .logo:hover {
 	cursor: pointer;
 }
 
-
-
-nav {
-	background-color: #212121;
-
-	@media screen and (min-width: 40em) {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-	}
+.mainmenu li {
+	margin: 0;
 }

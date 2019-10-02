@@ -5,14 +5,41 @@
     font-family: 'Cardo', serif;
  */
 
-h1, h2 {
+h1 {
 	font-family: 'Beth Ellen', cursive;
+	margin-bottom: 0rem;
+	color: #efefef;
 }
 
 h2 {
-	padding-bottom: 1rem;
+	font-family: 'Cardo', serif;
+	font-weight: 700;
+	padding-bottom: .5rem;
+	color: #efefef;
 }
 
 p {
 	font-family: 'Cardo', serif;
+	color: #efefef;
+}
+
+.menu {
+	justify-content: flex-end;
+}
+
+.menu li a {
+	padding: .5rem;
+	font-family: 'Cardo', serif;
+	font-size: 1.2rem;
+	color: #efefef;
+}
+
+.menu li a:hover {
+	color: #a31b1b;
+}
+
+.menu li a:focus {
+	color: #a31b1b;
+	font-weight: 700;
+	font-size: 1.5rem;
 }
