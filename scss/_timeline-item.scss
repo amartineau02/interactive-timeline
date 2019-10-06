@@ -7,18 +7,38 @@ main {
 	padding-top: 1.5rem;
 }
 
-// 	h1, h2 {
-// 		opacity: 0;
-// 	}
 
-// 	h1 {
-// 		animation-name: flicker;
-// 		animation-duration: 1s;
-// 		animation-iteration-count: infinite;
-// 		animation-direction: alternate;
-// 		aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
-// 		opacity: 0;
-// 	}
+
+h1 {
+	opacity: 0;
+}
+
+h1 {
+	animation-name: flicker;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
+	opacity: 0;
+}
+
+.flicker {
+	animation-name: flicker;
+	aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
+	opacity: 0;
+}
+
+@keyframes flicker {
+  0% { opacity: 0; }
+  15% { opacity: .4; }
+  16% { opacity: .2; }
+  17% { opacity: 0; }
+  19% { opacity: .3; }
+  35% { opacity: .1; }
+  50% { opacity: 0; }
+  55% { opacity: .2; }
+  70% { opacity: .1; }
+  100% { opacity: .4; }
+}
 
 // 	h2 {
 // 		animation-name: flicker;
@@ -48,23 +68,4 @@ main {
 // 	z-index: 1;
 // 	opacity: 0;
 
-// }
-
-// .flickr {
-// 	animation-name: flicker;
-// 	animation-duration: 15s;
-// 	aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
-// 	opacity: 0;
-// }
-
-// @keyframes flicker {
-//   0% { opacity: 0; }
-//   // 15% { opacity: 1; }
-//   // 16% { opacity: .1; }
-//   // 17% { opacity: .7; }
-//   // 19% { opacity: .3; }
-//   // 35% { opacity: .5; }
-//   // 50% { opacity: 0; }
-//   // 70% { opacity: .7; }
-//   100% { opacity: 1; }
 // }
