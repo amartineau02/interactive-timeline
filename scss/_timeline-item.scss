@@ -10,6 +10,15 @@ main {
 
 .panel {
 	min-height: 100vh;
+	display: flex;
+
+	.grid-container {
+		margin: auto;
+	}
+
+	.highlight {
+		background-color: yellow;
+	}
 }
 
 ::selection {
@@ -25,8 +34,7 @@ main {
 h1 {
 	animation-name: flicker;
 	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-fill-mode: forwards;
 	aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
 	opacity: 0;
 }

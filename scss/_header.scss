@@ -1,16 +1,16 @@
 /* HEADER & FOOTER -- WHERE TIMELINE STUFF IS */
 
-header, footer {
-	padding: 1rem;
-}
-
 header {
 	background-color: #212121;
+	padding: 1rem;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 
-footer {
-	background-color: rgba(0,0,0,.5)
-}
+
 
 .logo {
 	position: relative;
@@ -23,4 +23,15 @@ footer {
 
 .mainmenu li {
 	margin: 0;
+}
+
+
+
+footer {
+	padding: 1rem;
+	background-color: rgba(0,0,0,.5)
+}
+
+footer p {
+	margin-bottom: 0rem;
 }
