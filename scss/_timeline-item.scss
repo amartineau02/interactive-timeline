@@ -4,19 +4,29 @@ main {
 	background-image: url("../img/bg.jpg");
 	background-position: center;
 	background-position: bottom;
+	background-attachment: fixed;
 	padding-top: 1.5rem;
 }
 
-
-
-h1 {
-	opacity: 0;
+.panel {
+	min-height: 100vh;
 }
+
+::selection {
+  background: #a31b1b; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #a31b1b; /* Gecko Browsers */
+}
+
+
+
 
 h1 {
 	animation-name: flicker;
 	animation-duration: 3s;
-	animation-iteration-count: 1;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 	aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
 	opacity: 0;
 }
@@ -32,13 +42,17 @@ h1 {
   15% { opacity: .4; }
   16% { opacity: .2; }
   17% { opacity: 0; }
-  19% { opacity: .3; }
+  19% { opacity: .5; }
   35% { opacity: .1; }
   50% { opacity: 0; }
   55% { opacity: .2; }
   70% { opacity: .1; }
   100% { opacity: .4; }
 }
+
+
+
+
 
 // 	h2 {
 // 		animation-name: flicker;
@@ -48,14 +62,6 @@ h1 {
 // 		aniamtion-timing-function: cubic-bezier(.17,.67,1,-0.1);
 // 		opacity: 0;
 // 	}
-// }
-
-
-// ::selection {
-//   background: red; /* WebKit/Blink Browsers */
-// }
-// ::-moz-selection {
-//   background: red; /* Gecko Browsers */
 // }
 
 // .overlay {

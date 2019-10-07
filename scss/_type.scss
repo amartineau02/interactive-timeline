@@ -1,10 +1,11 @@
-/* TYPOGRAPHY */
+// TYPOGRAPHY
 
-/* 
-    font-family: 'Beth Ellen', cursive;
-    font-family: 'Cardo', serif;
- */
+// font-family: 'Beth Ellen', cursive;
+// font-family: 'Cardo', serif;
 
+
+
+//HEADERS
 h1 {
 	font-family: 'Beth Ellen', cursive;
 	font-size: 7rem;
@@ -16,16 +17,23 @@ h1 {
 h2 {
 	font-family: 'Cardo', serif;
 	font-weight: 700;
-	margin-top: -5rem;
+	margin-top: -5.5rem;
+	margin-bottom: 2rem;
 	color: #efefef;
 }
 
 
+
+// PARAGRAPH
 p {
 	font-family: 'Cardo', serif;
 	color: #efefef;
+	font-size: 1rem;
 }
 
+
+
+// MENU
 .menu {
 	justify-content: flex-end;
 }
@@ -44,5 +52,4 @@ p {
 .menu li a:focus {
 	color: #a31b1b;
 	font-weight: 700;
-	font-size: 1.5rem;
 }
