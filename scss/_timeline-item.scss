@@ -22,10 +22,10 @@ main {
 }
 
 ::selection {
-  background: #a31b1b; /* WebKit/Blink Browsers */
+  background: $red; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #a31b1b; /* Gecko Browsers */
+  background: $red; /* Gecko Browsers */
 }
 
 
