@@ -4,6 +4,7 @@
 	height: 100vh;
 	padding-top: 10rem;
 	background-color: #424242;
+	z-index: 1;
 }
 
 
@@ -24,6 +25,7 @@ figure {
 
 	img:hover {
 	  transform: scale(1.2);
+	  -webkit-transition: transform 1.5s ease-in;
 	}
 
 	.one {
@@ -34,8 +36,7 @@ figure {
 	  animation-duration: 2s;
 	  animation-delay: 1s;
 	  animation-fill-mode: forwards;
-	  transform: rotate(-20deg);
-	  z-index: 1;
+	  transform: rotate(-5deg);
 
 	  @media screen and (min-width: 40em) {
 	  	top: 75%;
@@ -43,7 +44,7 @@ figure {
 	  }
 
 	  @media screen and (min-width: 64em) {
-	  	top: 60%;
+	  	top: 70%;
 	  	left: 50%;
 	  	width: 40%;
 	  }
@@ -57,7 +58,6 @@ figure {
 	  animation-delay: .5s;
 	  animation-fill-mode: forwards;
 	  transform: rotate(5deg);
-	  z-index: 3;
 
 	  @media screen and (min-width: 40em) {
 	  	right: -5%;
@@ -67,7 +67,8 @@ figure {
 
 	  @media screen and (min-width: 64em) {
 	  	right: -5%;
-	  	bottom: 1%;
+	  	bottom: -10%;
+	  	width: 30%;
 	  }
 	}
 
@@ -79,7 +80,6 @@ figure {
 	  animation-delay: .7s;
 	  animation-fill-mode: forwards;
 	  transform: rotate(5deg);
-	  z-index: 4;
 
 	  @media screen and (min-width: 40em) {
 	  	bottom: -5%;
@@ -100,7 +100,6 @@ figure {
 	  animation-duration: 2s;
 	  animation-delay: 1.5s;
 	  animation-fill-mode: forwards;
-	  z-index: 2;
 
 	  @media screen and (min-width: 40em) {
 	  	bottom: 5%;
@@ -109,7 +108,7 @@ figure {
 	  }
 
 	  @media screen and (min-width: 64em) {
-	  	bottom: 25%;
+	  	bottom: 20%;
 	  	left: 47%;
 	  	width: 35%;
 	  }
@@ -124,7 +123,6 @@ figure {
 	  animation-delay: 1s;
 	  animation-fill-mode: forwards;
 	  transform: rotate(-5deg);
-	  z-index: 5;
 
 	  @media screen and (min-width: 40em) {
 	  	bottom: 0%;
@@ -137,6 +135,10 @@ figure {
 	  	left: 55%;
 	  	width: 25%;
 	  }
+	}
+
+	.top {
+		z-index: 1;
 	}
 }
 

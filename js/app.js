@@ -1,25 +1,17 @@
 $(document).foundation();
 
-// when the page loads, hide every panel
-$('.panel').hide();
 
-// handle clicks on the main navigation
-$('.mainmenu a').click(function(e){
-  // remove flickr only to add it again later
-  $('main h1,main h2').removeClass('flickr');
-  // don't do the default action (jump to a linked section of the page)
-  e.preventDefault();
-  // hide the intro
-  $('.intro').hide();
-  // save the destination of the selected link (the one that was just clicked)
-  var curr = $(this).attr('href');
-  // hide every panel
-  $('.panel').hide();
-  // show the selected panel
-  $(curr).show();
-  // add class to overlay to flickr transition
-  $('main h1,main h2').addClass('flickr');
+$('.panel').hide(); // when the page loads, hide every panel
 
+
+$('.mainmenu a').click(function(e){ // handle clicks on the main navigation
+  $('main h1,main h2').removeClass('flickr'); // remove flickr only to add it again later
+  e.preventDefault(); // don't do the default action (jump to a linked section of the page)
+  $('.intro').hide(); // hide the intro
+  var curr = $(this).attr('href'); // save the destination of the selected link (the one that was just clicked)
+  $('.panel').hide(); // hide every panel
+  $(curr).show(); // show the selected panel
+  $('main h1,main h2').addClass('flickr'); // add class to overlay to flickr transition
   console.log(curr);
 });
 
@@ -27,4 +19,12 @@ $('.mainmenu a').click(function(e){
 // handle click on the logo
 $('.logo').click(function(){
   $('.intro').show();
+});
+
+
+
+// z-index
+$('.im').hover(function(){
+  $('.im').removeClass('top');
+  $(this).addClass('top');
 });

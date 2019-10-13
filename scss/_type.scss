@@ -12,6 +12,7 @@ h1 {
 	margin-bottom: 0rem;
 	opacity: .4;
 	color: #efefef;
+	z-index: 0;
 }
 
 h2 {
@@ -27,7 +28,6 @@ h3 {
 	font-weight: 700;
 	margin-top: -5.5rem;
 	color: #efefef;
-	text-align: center;
 
 	@media screen and (min-width: 40em) {
 		padding-top: 10%;
@@ -40,6 +40,10 @@ h3 {
 
 h3 + p {
 	text-align: center;
+
+	@media screen and (min-width: 64em) {
+		text-align: left;
+	}
 }
 
 
@@ -48,7 +52,7 @@ h3 + p {
 p {
 	font-family: 'Cardo', serif;
 	color: #efefef;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 
@@ -85,24 +89,24 @@ p {
 
 
 // AAAAAAH
-span {
-      position: relative;
-      &::before {
-        content: '';
-        background-color: yellow;
-        position: absolute;
-        bottom: -.1rem;
-        left: 0;
-        width: 0;
-        height: .1rem;
-        animation-name: highlight;
-        animation-duration: 1s;
-        animation-delay: 2.5s;
-        animation-fill-mode: forwards;
-    }
-}
+// span {
+//       position: relative;
+//       &::before {
+//         content: '';
+//         background-color: yellow;
+//         position: absolute;
+//         bottom: -.1rem;
+//         left: 0;
+//         width: 0;
+//         height: .1rem;
+//         animation-name: highlight;
+//         animation-duration: 1s;
+//         animation-delay: 2.5s;
+//         animation-fill-mode: forwards;
+//     }
+// }
 
-@keyframes highlight {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
+// @keyframes highlight {
+//   0% { width: 0; }
+//   100% { width: 100%; }
+// }
