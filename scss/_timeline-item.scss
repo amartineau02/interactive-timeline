@@ -16,9 +16,9 @@ main {
 		margin: auto;
 	}
 
-	.highlight {
-		background-color: yellow;
-	}
+	// .highlight {
+	// 	background-color: yellow;
+	// }
 }
 
 ::selection {
@@ -49,10 +49,8 @@ h1 {
   0% { opacity: 0; }
   15% { opacity: .4; }
   16% { opacity: .2; }
-  17% { opacity: 0; }
-  19% { opacity: .5; }
+  19% { opacity: .4; }
   35% { opacity: .1; }
-  50% { opacity: 0; }
   55% { opacity: .2; }
   70% { opacity: .1; }
   100% { opacity: .4; }
