@@ -33,8 +33,30 @@ main {
 		padding: 0;
 	  }
 	}
+
+	.year {
+		text-align: center;
+		margin-top: 9rem;
+	}
+
+	.title {
+		text-align: center;
+		margin-top: -4rem;
+	}
+
+	.pic {
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+	.para {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
+
+
+// OVERALL
 .cell {
 	padding-left: 1%;
 	padding-right: 1%;
@@ -42,6 +64,7 @@ main {
 
 
 
+// HIGHLIGHT
 ::selection {
   background: $red; /* WebKit/Blink Browsers */
 }
@@ -51,6 +74,7 @@ main {
 
 
 
+// FLICKERING HEADER
 h1 {
 	animation-name: flicker;
 	animation-duration: 3s;
