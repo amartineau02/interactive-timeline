@@ -37,20 +37,27 @@ main {
 	.year {
 		text-align: center;
 		margin-top: 9rem;
+		@media screen and (min-width: 40em) {
+			margin-top: 4rem;
+		}
 	}
-
 	.title {
 		text-align: center;
 		margin-top: -4rem;
 	}
-
 	.pic {
 		padding-top: 8%;
 		padding-bottom: 8%;
+		@media screen and (min-width: 40em) {
+			padding-top: 2%;
+			padding-bottom: 2%;
+		}
 	}
 	.para {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding: 0rem 1rem;
+		@media screen and (min-width: 40em) {
+			padding: 0rem 2rem;
+		}
 	}
 }
 
