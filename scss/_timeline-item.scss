@@ -15,7 +15,26 @@ main {
 	.grid-container {
 		margin: auto;
 	}
+
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+
+		@media screen and (min-width: 40em) {
+			padding-top: 13%;
+		}
+
+		@media screen and (min-width: 64em) {
+			top: 60%;
+			left: 50%;
+			// width: 40%;
+		}
+	}
 }
+
+
 
 ::selection {
   background: $red; /* WebKit/Blink Browsers */
@@ -23,7 +42,6 @@ main {
 ::-moz-selection {
   background: $red; /* Gecko Browsers */
 }
-
 
 
 
