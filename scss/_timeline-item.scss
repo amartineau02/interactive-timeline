@@ -2,8 +2,7 @@
 
 main {
 	background-image: url("../img/bg.jpg");
-	background-position: center;
-	background-position: bottom;
+	background-position: top;
 	background-attachment: fixed;
 	padding-top: 1.5rem;
 }
@@ -39,6 +38,9 @@ main {
 		margin-top: 9rem;
 		@media screen and (min-width: 40em) {
 			margin-top: 4rem;
+		}
+		@media screen and (min-width: 64em) {
+			margin-top: 0rem;
 		}
 	}
 	.title {
